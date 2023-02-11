@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="About.css">
+</head>
+<body>
+    <div id="header">
+        <!-- <div class="container"> -->
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Protfolio.html">My Interest</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                 
+
+                </ul>
+            </nav>                        
+            
+            <div id="About">
+                <div class="Container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title"></h1>
+                            <p>Hi Everyone!!!I am Krishma Adhhikari and I describe myself as a hardworking student.<br>Currently I am studying at Herald College Kathmandu <br>My aim is to be a full-stack developer.<br>My Hobbies are cooking,dancing,singing,playing games and travelling.<br> I am fond of listening music and I do like to learn and experience new things. 
+
+                            </p>
+
+                          <div class="tab-titles">
+                            <p class="tab-links active-link">Education</p>
+                          </div>
+                          <div class="tab-contents">
+                            <ul>
+                                <li><span>2019</span><br>Passed By SEE from Kankai Secondary Boarding School</li>
+
+                                <li><span>2022</span><br>Completed my NEB from Kathmandu Model College(KMC)</li>
+                                <a href="https://ktmmodelcollege.edu.np/">Kathmandu Model College</a>
+                                <li><span>2026</span><br>Currently Studying at Herald College Kathmandu</li>
+                                <a href="https://heraldcollege.edu.np/">Herald College Kathmandu</a>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    
+                                
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(table of tablinks){
+                tablink.classlist.remove("active-link");
+
+            }
+            for(tabcontents of tabcontents){
+                tabcontents.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classlist.add("active tab ")
+        }
+    </script>
+</body>
+</html>

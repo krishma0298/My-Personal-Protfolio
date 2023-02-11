@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height: 75vh;
+    background-image: url();
+    background-size:cover;
+    background-position: center;
+    background-color: rgba(122, 83, 38, 0.827);
+    
+}
+.container{
+    padding: 6px 8%;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width:140px;
+}
+nav ul li{
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+nav ul li a {
+    color: rgb(220, 189, 151);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: rgb(215, 183, 123);
+    position: absolute;
+    left: 0;
+    bottom:-5px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+ margin-top: 20%;
+ font-size: 20px;
+ color: rgb(240, 216, 184);
+ font-weight: bold;
+ margin-bottom: 10%;
+}
+.header-text h1{
+    font-size: 25px;
+    margin-top: 50px;
+    color: rgb(83, 71, 35);
+    text-shadow:rgba(0, 0, 0, 5);
+}
+.header-text a{
+    font-size: 14px;
+    color: rgb(122, 89, 46);
+    position: absolute;
+    
+}
+.header-text a::after{
+    content: "";
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: -4px;
+    transition:0.5s;
+    
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+
+}
+.row{
+    display: flex;
+}
+.box.h1{
+    text-align: center;
+    color: rgb(246, 216, 161);
+    text-decoration: rgb(220, 228, 150);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height:450px;
+    border:1px rgb(115, 75, 75);
+    margin:10px;
+    align-items: center;
+    text-align:justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(236, 186, 128));
+    background-size: 100% 200%;
+    transition: all .8s;
+
+}
+.box:hover{
+    background-position: left bottom;
+    color:rgba(161, 77, 77, 0.899);
+    border: none;
+    box-shadow: 0 0 20px rgba(241, 204, 156, 0.896);
+}
+
